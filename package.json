@@ -1,0 +1,29 @@
+{
+  "name": "terminal-lava-lamp",
+  "version": "1.0.0",
+  "description": "A seeded terminal metaball lava lamp with drifting blobs and smooth SVG contours",
+  "type": "module",
+  "bin": {
+    "terminal-lava-lamp": "./src/cli.js"
+  },
+  "exports": "./src/index.js",
+  "files": [
+    "src",
+    "assets",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/cli.js && node --check src/terminal.js && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b69ca/terminal-lava-lamp.git"
+  },
+  "license": "MIT"
+}
